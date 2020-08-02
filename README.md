@@ -3,19 +3,17 @@
 ![exploanets.jpg](Images/exoplanets.jpg)
 
 ## Introduction
-<hr>
 Over a period of nine years in deep space, the NASA Kepler space telescope has been out on a planet-hunting mission to discover hidden planets outside of our solar system.
 
 To help process this data, we will build machine learning models capable of classifying candidate exoplanets from the raw dataset.
 ## Data set
-<hr>
 All data comes from the Kepler Exoplanet Search Results dataset, available on Kaggle at https://www.kaggle.com/nasa/kepler-exoplanet-search-results. Further documentation on the specific content of each of the columns can be found here: https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html
 
 The data columns were classified into two different groups:
 - Non-categorical: These are features allowing continuous values.
 - Categorical: Every feature containing less than 10 distinct values is labeled as a categorical feature.
 
-Further discussion of such features, as well as a characterization of all the relevant features found in the dataset, can be found in the `data_exploration.ipynb`file.
+Further discussion of such features, as well as a characterization of all the relevant features found in the dataset, can be found in the `data_exploration.ipynb` file.
 
 ## Models generated
 All the models were generated using the latest Sklearn and Joblib packages avabilable as of 1st August 2020. The classification models were made from the provided dataset using the `koi_disposition` feature as predicted values. In all cases, the data set was filtered to contain only the `CONFIRMED` and `FALSE POSITIVE`outcomes, leaving out of the model all the classification pending records (labeled as `CANDIDATE` in the original dataset).
@@ -37,7 +35,6 @@ In all cases, the available data was preprocessed and scaled to do an initial fi
 
 
 ## Final model discussion
-<hr>
 Model 3 was selected as the final model and saved in the `final_model.sav` file. The selection was based on the GridSearchCV, training and testing scores obtained. Though this model did not get the highest score out of the best estimator, the testing score of this model is the highest. This parameter is preferred over GridSearchCV and training scores to prevent model overfitting and this model seems to be the best one to predict outcomes from new values.
 
 The final model makes the following assumptions:
