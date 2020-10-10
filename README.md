@@ -2,12 +2,12 @@
 
 ![exploanets.jpg](Images/exoplanets.jpg)
 
-## Introduction
+## Background
 Over a period of nine years in deep space, the NASA Kepler space telescope has been out on a planet-hunting mission to discover hidden planets outside of our solar system.
 
-To help process this data, we will build machine learning models capable of classifying candidate exoplanets from the raw dataset.
+To help process this data, we will build machine learning models capable of classifying candidate exoplanets from a raw dataset.
 ## Data set
-All data comes from the Kepler Exoplanet Search Results dataset, available on Kaggle at https://www.kaggle.com/nasa/kepler-exoplanet-search-results. Further documentation on the specific content of each of the columns can be found here: https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html
+All data comes from the Kepler Exoplanet Search Results dataset, available on Kaggle at https://www.kaggle.com/nasa/kepler-exoplanet-search-results. Further documentation on the specific content of each of the fields contained in the data set can be found here: https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html
 
 The data columns were classified into two different groups:
 - Non-categorical: These are features allowing continuous values.
